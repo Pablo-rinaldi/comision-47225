@@ -1,7 +1,11 @@
+import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer.jsx";
+import { MaterialUI } from "./components/pages/materialUI/MaterialUI.jsx";
+
 function App() {
   return (
     <div>
-      <h1>App</h1>
+      <MaterialUI />
+      <ItemListContainer saludo="como estas" edad="15" />
     </div>
   );
 }

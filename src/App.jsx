@@ -6,15 +6,17 @@ import { MaterialUI } from "./components/pages/materialUI/MaterialUI.jsx";
 import { Navbar } from "./components/layout/navbar/Navbar";
 import { Home } from "./components/pages/home/Home";
 import { Login } from "./components/pages/login/Login";
+import { ThemeProvider } from "@emotion/react";
+import { customTheme } from "./themeConfig.js";
+import { PruebaResponsive } from "./components/pages/pruebaResponsive/PruebaResponsive.jsx";
 
 function App() {
   return (
     <div>
-      <MaterialUI />
-      <ItemListContainer saludo="como estas" edad="15" />
-      <Navbar />
-      {/* <Home />
-      <Login /> */}
+      <ThemeProvider theme={customTheme}>
+        <PruebaResponsive />
+        {/*<MaterialUI />*/}
+      </ThemeProvider>
     </div>
   );
 }

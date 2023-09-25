@@ -1,10 +1,15 @@
-import { Button } from "@mui/material";
+import { Button, TextField, Typography } from "@mui/material";
 
 export const MaterialUI = () => {
   return (
     <div>
-      <h1>Estoy aprendiendo esta mierda</h1>
-      <Button variant="contained">Saludo</Button>
+      <Typography color={"primary"} variant="h2">
+        Aprendiendo Mui
+      </Typography>
+
+      <TextField id="outlined-basic" label="Email" variant="outlined" />
+
+      <Button variant="contained">Ingresar</Button>
     </div>
   );
 };

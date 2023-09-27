@@ -1,7 +1,11 @@
-export const ItemList = () => {
+import { ProductCard } from "../../common/productCard/ProductCard";
+
+export const ItemList = ({ items }) => {
   return (
-    <div>
-      <h1>Item list Container</h1>
-    </div>
+    <section style={{ display: "flex", justifyContent: "space-evenly" }}>
+      {items.map((item) => {
+        return <ProductCard key={item.id} item={item} />;
+      })}
+    </section>
   );
 };
